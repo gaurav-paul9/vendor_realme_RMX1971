@@ -5,7 +5,7 @@
 soong_namespace {
     imports: [
         "device/realme/RMX1971",
-        "hardware/qcom-caf/sdm845",
+        "hardware/qcom-caf/sdm660",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/commonsys-intf/display",
         "vendor/qcom/opensource/commonsys/display",
@@ -12015,7 +12015,6 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "libdrm",
                 "libdrmutils",
-                "libdisplaydebug",
                 "libc++",
                 "libc",
                 "libm",
@@ -12044,7 +12043,6 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "libbinder",
                 "libutils",
-                "libdisplaydebug",
                 "libtinyxml2_1",
                 "libc++",
                 "libc",
@@ -12073,7 +12071,6 @@ cc_prebuilt_library_shared {
                 "libdiag",
                 "libsdmutils",
                 "libbinder",
-                "libdisplaydebug",
                 "libc++",
                 "libc",
                 "libm",
@@ -12098,7 +12095,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdm-disp-vndapis.so",
             ],
             shared_libs: [
-                "libdisplaydebug",
                 "libqservice",
                 "libbinder",
                 "libcutils",
@@ -12128,7 +12124,6 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/libsdmextension.so",
             ],
             shared_libs: [
-                "libdisplaydebug",
                 "libsdmutils",
                 "libdisplayqos",
                 "libsdm-color",
@@ -16042,7 +16037,6 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libpiex",
                 "libpng",
-                "libheif",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -16074,7 +16068,6 @@ cc_prebuilt_library_shared {
                 "libjpeg",
                 "libpiex",
                 "libpng",
-                "libheif",
                 "libnativewindow",
                 "libEGL",
                 "libGLESv2",
@@ -16809,7 +16802,7 @@ cc_prebuilt_library_shared {
                 "libaudioclient",
                 "libaudiofoundation",
                 "audioclient-types-aidl-cpp",
-                "android.media.audio.common.types-V4-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "libwfdmmsrc_system",
                 "libwfdavenhancements",
                 "libhidlbase",
